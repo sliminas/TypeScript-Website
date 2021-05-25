@@ -132,7 +132,7 @@ person.on("ageChanged", newAge => {
 })
 ```
 
-Here we made `on` into a generic method.
+Here we turned `on` into a generic method.
 
 When a user calls with the string `"firstNameChanged'`, TypeScript will try to infer the right type for `Key`.
 To do that, it will match `Key` against the content prior to `"Changed"` and infer the string `"firstName"`.
